@@ -1,0 +1,6 @@
+<svg width="210" height="48" viewBox="0 0 210 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="8" width="32" height="32" rx="8" fill="#1CA345"/>
+  <path d="M11 30V18h3.2v12H11Zm6.4 0V18h6.6c2.7 0 4.6 1.6 4.6 4.1 0 2.6-1.9 4.2-4.6 4.2h-3.4V30h-3.2Zm3.2-6.4h2.9c1 0 1.7-.6 1.7-1.5s-.7-1.5-1.7-1.5h-2.9v3Z" fill="#fff"/>
+  <text x="44" y="22" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2937">IT PROGRESS</text>
+  <text x="44" y="38" font-family="Arial, sans-serif" font-size="9.5" font-weight="500" fill="#1CA345" letter-spacing="1.5">DIZAYN STUDIYASI</text>
+</svg>

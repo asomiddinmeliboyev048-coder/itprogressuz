@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veb-saytlar yaratish eng foydali narxlarda | IT Progress</title>
+    <meta name="description"
+        content="Biz Toshkent va O'zbekistonning boshqa hududlarida CMS boshqaruv tizimiga ega saytlarni ishlab chiqish va yaratish bo'yicha to'liq xizmatlar taklif qilamiz.">
+    <meta name="keywords" content="sayt yaratish, sayt ishlab chiqish, saytga buyurtma">
+    <meta name="robots" content="index,follow">
+
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ============ HEADER TOP ============ -->
+    <header class="mp-main-menu-container">
+        <div class="mp-wrapp mp-main-menu-container__inner">
+            <a class="mp-main-menu__logo" href="/">
+                <img src="assets/images/logo.svg" alt="IT Progress">
+            </a>
+
+            <nav class="mp-main-menu__nav">
+                <ul class="mp-main-menu__nav-in">
+                    <li class="mp-main-menu__item">
+                        <a class="mp-main-menu__item-link active" href="/">Veb-saytlar yaratish</a>
+                        <ul class="mp-main-menu__item-sublist">
+                            <li><a href="/" class="mp-main-menu__item-sublist-link">Veb-saytlar yaratish</a></li>
+                            <li><a href="#portfolio" class="mp-main-menu__item-sublist-link">Portfolio</a></li>
+                            <li><a href="#tariffs" class="mp-main-menu__item-sublist-link">Narxlar</a></li>
+                            <li><a href="#faq" class="mp-main-menu__item-sublist-link">Izohlar</a></li>
+                            <li><a href="#" class="mp-main-menu__item-sublist-link">Aksiya</a></li>
+                            <li><a href="#" class="mp-main-menu__item-sublist-link">Yordam</a></li>
+                            <li><a href="#footer" class="mp-main-menu__item-sublist-link">Biz haqimizda</a></li>
+                            <li><a href="#footer" class="mp-main-menu__item-sublist-link">Aloqalar</a></li>
+                        </ul>
+                    </li>
+                    <li class="mp-main-menu__item">
+                        <a class="mp-main-menu__item-link" href="#">Veb-saytlar do'koni</a>
+                        <ul class="mp-main-menu__item-sublist">
+                            <li><a href="#" class="mp-main-menu__item-sublist-link">Veb-saytlar do'koni</a></li>
+                            <li><a href="#" class="mp-main-menu__item-sublist-link">Logotiplar do'koni</a></li>
+                            <li><a href="#" class="mp-main-menu__item-sublist-link">Saytni sozlash</a></li>
+                            <li><a href="#" class="mp-main-menu__item-sublist-link">Tayyor dizaynlar</a></li>
+                        </ul>
+                    </li>
+                    <li class="mp-main-menu__item">
+                        <a class="mp-main-menu__item-link" href="#">Xizmatlar</a>
+                        <ul class="mp-main-menu__item-sublist">
+                            <li><a href="#" class="mp-main-menu__item-sublist-link">Xizmatlar</a></li>
+                            <li><a href="#" class="mp-main-menu__item-sublist-link">Onicon</a></li>
+                            <li><a href="#" class="mp-main-menu__item-sublist-link">Maliver</a></li>
+                            <li><a href="#" class="mp-main-menu__item-sublist-link">Logotip konstruktor</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="mp-main-menu__search" aria-label="Qidiruv" data-bs-toggle="modal"
+                data-bs-target="#searchModal">
+                <i class="bx bx-search"></i>
+            </button>
+
+            <a class="mp-main-menu__btn-login" href="#" aria-label="Kabinet">
+                <i class="bx bx-user"></i>
+            </a>
+
+            <div class="mp-main-menu__phones">
+                <a class="mp-main-menu__phone" href="tel:+998943441929">+998 (94) 344-19-29</a>
+            </div>
+
+            <button class="mp-main-menu__btn-burger js-menu-open" aria-label="Menyu">
+                <i class="bx bx-menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ HEADER BOTTOM ============ -->
+    <div class="mp-main-menu__bot">
+        <div class="mp-main-menu__bot-in mp-wrapp">
+            <nav class="mp-main-menu__bot-nav">
+                <ul class="mp-main-menu__bot-nav-in">
+                    <li class="mp-main-menu__bot-item">
+                        <a href="/" class="mp-main-menu__bot-link">Veb-saytlar yaratish</a>
+                        <ul class="mp-main-menu__bot-item-submenu">
+                            <li><a href="#tariffs">Qabul sahifasi</a></li>
+                            <li><a href="#tariffs">Biznes sayt</a></li>
+                            <li><a href="#tariffs">Internet-do'kon</a></li>
+                        </ul>
+                    </li>
+                    <li class="mp-main-menu__bot-item"><a href="#portfolio" class="mp-main-menu__bot-link">Portfolio</a></li>
+                    <li class="mp-main-menu__bot-item"><a href="#tariffs" class="mp-main-menu__bot-link">Narxlar</a></li>
+                    <li class="mp-main-menu__bot-item"><a href="#faq" class="mp-main-menu__bot-link">Izohlar</a></li>
+                    <li class="mp-main-menu__bot-item"><a href="#" class="mp-main-menu__bot-link">Aksiya</a></li>
+                    <li class="mp-main-menu__bot-item"><a href="#" class="mp-main-menu__bot-link">Yordam</a></li>
+                    <li class="mp-main-menu__bot-item"><a href="#footer" class="mp-main-menu__bot-link">Biz haqimizda</a></li>
+                    <li class="mp-main-menu__bot-item"><a href="#footer" class="mp-main-menu__bot-link">Aloqalar</a></li>
+                </ul>
+            </nav>
+            <a class="mp-main-menu__link" href="#order" data-bs-toggle="modal" data-bs-target="#orderModal">Buyurtma berish</a>
+            <div class="dropdown">
+                <button class="mp-main-menu__lang dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Til</button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">🇺🇸 Inglizcha</a></li>
+                    <li><a class="dropdown-item" href="#">🇺🇿 O'zbekcha</a></li>
+                    <li><a class="dropdown-item" href="#">🇷🇺 Ruscha</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ MOBILE ASIDE ============ -->
+    <aside class="mp-m-menu js-m-aside">
+        <button class="mp-m-aside-close js-aside-close" aria-label="Yopish"><i class="bx bx-x"></i></button>
+        <div class="mp-m-menu__inner">
+            <div class="mp-m-menu__phones">
+                <div class="mp-m-menu__phones-title">Butun O'zbekiston bo'ylab ishlaymiz</div>
+                <a href="tel:+998972606909">+998 (97) 260-69-09</a>
+                <a href="tel:+998943441929">+998 (94) 344-19-29</a>
+            </div>
+            <ul class="mp-m-nav">
+                <li><a href="/">Veb-saytlar yaratish</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#tariffs">Narxlar</a></li>
+                <li><a href="#faq">Izohlar</a></li>
+                <li><a href="#">Aksiya</a></li>
+                <li><a href="#">Yordam</a></li>
+                <li><a href="#footer">Biz haqimizda</a></li>
+                <li><a href="#footer">Aloqalar</a></li>
+            </ul>
+            <a class="mp-m-menu__btn" href="#order" data-bs-toggle="modal" data-bs-target="#orderModal">Sayt buyurtma qilish</a>
+            <a class="mp-m-menu__btn mp-m-menu__btn--outline" href="#">Kabinetga kirish</a>
+        </div>
+    </aside>
+    <div class="mp-m-overlay js-m-overlay"></div>
+
+    <!-- ============ HERO ============ -->
+    <section class="mg-main-top">
+        <div class="mp-wrapp mg-main-top__inner">
+            <div class="mg-main-top__content">
+                <h1 class="mg-main-top__title">Veb-saytlar yaratish <br> Eng foydali narxlarda</h1>
+                <p class="mg-main-top__text">Texnik yordam va xizmat ko'rsatish hamda 1 yilga SSL sertifikati
+                    sovg'a sifatida</p>
+                <a href="#order" class="mg-button mg-main-top__button" data-bs-toggle="modal"
+                    data-bs-target="#orderModal">Buyurtma berish</a>
+            </div>
+            <div class="mg-main-top__image">
+                <img src="assets/images/hero.svg" alt="Sayt yaratish">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TARIFFS ============ -->
+    <section class="mg-main-tariffs" id="tariffs">
+        <div class="mg-main-tariffs__inner mp-wrapp">
+            <h2 class="section-title">Xizmatlar</h2>
+            <div class="mg-main-tariffs__list">
+
+                <article class="mg-main-tariffs__item">
+                    <div class="mg-main-tariffs__item-title">Kichik veb sayt</div>
+                    <div class="mg-main-tariffs__item-text">Bitta sahifali veb-sayt, 3 kun ichida</div>
+                    <div class="mg-main-tariffs__item-price">1 950 000 so'm</div>
+                    <button class="mg-main-tariffs__item-button-more js-tariff-more" data-target="t1">Batafsil</button>
+                    <div class="mg-main-tariffs__item-buttons">
+                        <a href="#order" class="mg-main-tariffs__item-button" data-bs-toggle="modal"
+                            data-bs-target="#orderModal" data-tariff="Kichik veb sayt">Buyurtma berish</a>
+                    </div>
+                    <div class="mg-main-tariffs__details" id="t1" hidden>
+                        <div class="mg-main-tariffs__details-col">
+                            <h4>Sayt yaratish</h4>
+                            <ul>
+                                <li>Tayyor yechim asosida landing sahifasini ishga tushirish</li>
+                                <li>Rang sxemasini korporativ ranglaringizga moslashtirish</li>
+                                <li>Bloklarni biznesingiz xususiyatlariga moslab tahrirlash</li>
+                                <li>Domenni ulash va qidiruv tizimlarida ro'yxatdan o'tkazish</li>
+                            </ul>
+                        </div>
+                        <div class="mg-main-tariffs__details-col">
+                            <h4>Texnik xizmat ko'rsatish</h4>
+                            <ul>
+                                <li>Internetga joylashtirish</li>
+                                <li>Disk hajmi — 1000 Mb</li>
+                                <li>CMS.S3 qulay boshqaruv tizimi</li>
+                                <li>Texnik yordam va avtomatik zaxira nusxalar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mg-main-tariffs__item mg-main-tariffs__item--featured">
+                    <span class="mg-main-tariffs__badge">Ommabop</span>
+                    <div class="mg-main-tariffs__item-title">Veb-sayt — Biznes</div>
+                    <div class="mg-main-tariffs__item-text">Korporativ veb-sayt, 5 kun ichida</div>
+                    <div class="mg-main-tariffs__item-price">2 500 000 so'm</div>
+                    <button class="mg-main-tariffs__item-button-more js-tariff-more" data-target="t2">Batafsil</button>
+                    <div class="mg-main-tariffs__item-buttons">
+                        <a href="#order" class="mg-main-tariffs__item-button" data-bs-toggle="modal"
+                            data-bs-target="#orderModal" data-tariff="Veb-sayt — Biznes">Buyurtma berish</a>
+                    </div>
+                    <div class="mg-main-tariffs__details" id="t2" hidden>
+                        <div class="mg-main-tariffs__details-col">
+                            <h4>Sayt yaratish</h4>
+                            <ul>
+                                <li>Rang sxemasini korporativ ranglaringizga moslashtirish</li>
+                                <li>Sayt tuzilmasini biznesingizga moslab yaratish</li>
+                                <li>Kompaniyangiz ma'lumotlari bilan to'ldirish</li>
+                                <li>Domen va qidiruv tizimlarida ro'yxatdan o'tkazish</li>
+                            </ul>
+                        </div>
+                        <div class="mg-main-tariffs__details-col">
+                            <h4>Texnik xizmat ko'rsatish</h4>
+                            <ul>
+                                <li>Internetga joylashtirish</li>
+                                <li>Disk hajmi — 2000 Mb</li>
+                                <li>CMS.S3 qulay boshqaruv tizimi</li>
+                                <li>DDoS va xakerlik hujumlaridan himoya</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mg-main-tariffs__item">
+                    <div class="mg-main-tariffs__item-title">Internet-do'kon</div>
+                    <div class="mg-main-tariffs__item-text">Onlayn savdolar uchun sayt, 7 kun ichida</div>
+                    <div class="mg-main-tariffs__item-price">5 000 000 so'm</div>
+                    <button class="mg-main-tariffs__item-button-more js-tariff-more" data-target="t3">Batafsil</button>
+                    <div class="mg-main-tariffs__item-buttons">
+                        <a href="#order" class="mg-main-tariffs__item-button" data-bs-toggle="modal"
+                            data-bs-target="#orderModal" data-tariff="Internet-do'kon">Buyurtma berish</a>
+                    </div>
+                    <div class="mg-main-tariffs__details" id="t3" hidden>
+                        <div class="mg-main-tariffs__details-col">
+                            <h4>Sayt yaratish</h4>
+                            <ul>
+                                <li>Tayyor yechim asosida internet-do'kon ishga tushirish</li>
+                                <li>Rang sxemasini brendingizga moslashtirish</li>
+                                <li>Kategoriyalar va mahsulotlarni tahrirlash</li>
+                                <li>Mahsulotlaringiz bilan to'ldirish</li>
+                            </ul>
+                        </div>
+                        <div class="mg-main-tariffs__details-col">
+                            <h4>Texnik xizmat ko'rsatish</h4>
+                            <ul>
+                                <li>Internetga joylashtirish</li>
+                                <li>Disk hajmi — 5000 Mb</li>
+                                <li>7 kun davomida texnik qo'llab-quvvatlash</li>
+                                <li>Avtomatik zaxira va hujumlardan himoya</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PAYMENT ============ -->
+    <section class="mg-main-split">
+        <div class="mp-wrapp mg-main-split__inner">
+            <div class="mg-main-split__left">
+                <h3 class="mg-main-split__title">Hisoblarni o'zingizga qulay bo'lgan usullarda to'lang:</h3>
+            </div>
+            <div class="mg-main-split__right">
+                <img loading="lazy" src="assets/images/payment.svg" alt="To'lov usullari">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="mg-main-get">
+        <div class="mp-wrapp">
+            <h2 class="section-title">Biz bilan sayt ishlab chiqish orqali siz</h2>
+            <div class="mg-main-get__list">
+                <div class="mg-main-get__item">
+                    <div class="mg-main-get__item-ico"><i class="bx bx-rocket"></i></div>
+                    <div class="mg-main-get__item-title">Oson boshlash</div>
+                    <p class="mg-main-get__item-text">Biz sizga loyihangizni tezda ishga tushirishga yordam beramiz,
+                        uni qanday rivojlantirishni o'rgatamiz va qo'llab-quvvatlaymiz.</p>
+                </div>
+                <div class="mg-main-get__item">
+                    <div class="mg-main-get__item-ico"><i class="bx bx-store-alt"></i></div>
+                    <div class="mg-main-get__item-title">Veb-sayt sotish xizmatlari</div>
+                    <p class="mg-main-get__item-text">Mahsulot va xizmatlaringizni sotish uchun tayyor platforma.</p>
+                </div>
+                <div class="mg-main-get__item">
+                    <div class="mg-main-get__item-ico"><i class="bx bx-shield-quarter"></i></div>
+                    <div class="mg-main-get__item-title">Ishonchlilik</div>
+                    <p class="mg-main-get__item-text">Avtomatik zaxira nusxalari, DDoS hujumlariga chidamlilik va
+                        xakerlardan himoya.</p>
+                </div>
+                <div class="mg-main-get__item">
+                    <div class="mg-main-get__item-ico"><i class="bx bx-laptop"></i></div>
+                    <div class="mg-main-get__item-title">Qulaylik</div>
+                    <p class="mg-main-get__item-text">CMS.S3 boshqaruv tizimi saytni oson to'ldirishni ta'minlaydi,
+                        maxsus malakalar talab etilmaydi.</p>
+                </div>
+            </div>
+            <a href="#order" class="mg-button mg-main-get__button" data-bs-toggle="modal"
+                data-bs-target="#orderModal">Konsultatsiya olish</a>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="mg-main-faq" id="faq">
+        <div class="mg-main-faq__inner mp-wrapp">
+            <h2 class="section-title">Tez-tez beriladigan savollar</h2>
+            <div class="mg-main-faq__list js-accordion">
+                <div class="mg-main-faq__item">
+                    <button class="mg-main-faq__item-title">
+                        <span>Saytni yaratish uchun qanday muddatlar mavjud?</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                    <div class="mg-main-faq__item-body">
+                        <p>Bu saytning ko'rinishi va tanlangan tarifga bog'liq. Odatda ishlov berish 1 haftadan 4
+                            haftagacha davom etadi. Tayyor yechim asosida bir hafta, individual dizayn kerak bo'lsa 2–4
+                            hafta davom etadi.</p>
+                    </div>
+                </div>
+                <div class="mg-main-faq__item">
+                    <button class="mg-main-faq__item-title">
+                        <span>Saytni o'zim tahrirlay olishim mumkinmi?</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                    <div class="mg-main-faq__item-body">
+                        <p>Ha. Saytingiz CMS.S3 platformasida yaratiladi va sizga administrativ panelga kirish huquqi
+                            beriladi. Interfeys qulay, tushunarli va funksional.</p>
+                    </div>
+                </div>
+                <div class="mg-main-faq__item">
+                    <button class="mg-main-faq__item-title">
+                        <span>Nima uchun sizda narxlar juda arzon?</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                    <div class="mg-main-faq__item-body">
+                        <ul>
+                            <li>Ko'plab doimiy mijozlar tufayli fleksibil narx siyosatini saqlaymiz.</li>
+                            <li>Serverlarimiz O'zbekistonda — domen arzonroq.</li>
+                            <li>O'zimiz ishlab chiqqan CMS.S3 platformasidan foydalanamiz.</li>
+                            <li>Kompleks xizmatlar bir vaqtda taqdim etiladi.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mg-main-faq__item">
+                    <button class="mg-main-faq__item-title">
+                        <span>Saytning egasi kim bo'ladi?</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                    <div class="mg-main-faq__item-body">
+                        <p>Shartnoma bo'yicha sayt egasi — siz. Dizayn, domen nomi, vizual va matnli kontent sizga
+                            o'tadi. CMS.S3 orqali boshqaruvga kirish IT Progress qo'llab-quvvatlash davomida beriladi.</p>
+                    </div>
+                </div>
+                <div class="mg-main-faq__item">
+                    <button class="mg-main-faq__item-title">
+                        <span>Sizlar veb-sayt quruvchilaridan qanday farq qilasiz?</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                    <div class="mg-main-faq__item-body">
+                        <p>Biz saytni aynan sizning talablaringizga ko'ra ishlab chiqamiz. IT Progress — bu dizayn
+                            studiyasi: dizayn, verstka, xizmatlarni ulash, reklama, nazorat va maslahat.</p>
+                    </div>
+                </div>
+                <div class="mg-main-faq__item">
+                    <button class="mg-main-faq__item-title">
+                        <span>Kelajakda qancha to'lashim kerak bo'ladi?</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                    <div class="mg-main-faq__item-body">
+                        <p>To'lovdan so'ng 4 oylik bepul davr bo'ladi. Davom etsangiz, yangilash narxi:</p>
+                        <ul>
+                            <li>Sayt "Biznes" — yiliga 1 050 000 so'mdan;</li>
+                            <li>Internet-do'kon — yiliga 1 350 000 so'mdan;</li>
+                            <li>Landing sahifa — yiliga 750 000 so'mdan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ STEPS ============ -->
+    <section class="mg-main-steps">
+        <div class="mp-wrapp">
+            <h2 class="section-title">IT PROGRESS mijozlar bilan qanday ishlaydi</h2>
+            <div class="mg-main-steps__list">
+                <div class="mg-main-steps__item">
+                    <div class="mg-main-steps__num">1</div>
+                    <div class="mg-main-steps__title">Siz: Arizani rasmiylashtirasiz</div>
+                    <p class="mg-main-steps__text">Biz vazifangizni muhokama qilamiz va tezda ishga tushirish uchun eng
+                        yaxshi tayyor yechimni tanlashda yordam beramiz.</p>
+                </div>
+                <div class="mg-main-steps__item">
+                    <div class="mg-main-steps__num">2</div>
+                    <div class="mg-main-steps__title">Biz: Saytingizni to'ldirib, ishga tushiramiz</div>
+                    <p class="mg-main-steps__text">U zamonaviy dizaynga, o'z manziliga va mazmunga ega bo'ladi.</p>
+                </div>
+                <div class="mg-main-steps__item">
+                    <div class="mg-main-steps__num">3</div>
+                    <div class="mg-main-steps__title">Saytingiz: Yandex va Google'da paydo bo'ladi</div>
+                    <p class="mg-main-steps__text">Siz buyurtmalarni qabul qila boshlaysiz va daromadingizni oshirasiz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CATALOG ============ -->
+    <section class="mg-main-catalog">
+        <div class="mg-main-catalog__inner mp-wrapp">
+            <div class="mg-main-catalog__left">
+                <h2 class="mg-main-catalog__title">Tayyor mavzuli saytlar katalogi</h2>
+                <ul class="mg-main-catalog__list">
+                    <li><i class="bx bx-check"></i> O'ylangan tuzilma</li>
+                    <li><i class="bx bx-check"></i> Professional dizayn</li>
+                    <li><i class="bx bx-check"></i> Tez ishga tushirish</li>
+                    <li><i class="bx bx-check"></i> 200 dan ortiq tayyor yechimlar</li>
+                </ul>
+                <a class="mg-button" href="#portfolio">Saytni tanlang</a>
+            </div>
+            <div class="mg-main-catalog__image">
+                <img loading="lazy" src="assets/images/catalog.svg" alt="Tayyor saytlar katalogi">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="mg-main-portfolio" id="portfolio">
+        <div class="mp-wrapp">
+            <h2 class="section-title">Bizning ishlar portfeli</h2>
+            <p class="mg-main-portfolio__subtitle">O'tgan yili biz ko'plab loyihalar yaratdik. Misollarni ko'ring</p>
+            <div class="mg-main-portfolio__list">
+                <a class="mg-main-portfolio__item" href="#">
+                    <span class="mg-main-portfolio__item-image"><img loading="lazy" src="assets/images/portfolio.svg" alt="Fez Jizzakh"></span>
+                    <span class="mg-main-portfolio__item-title">Fez Jizzakh</span>
+                    <span class="mg-main-portfolio__item-theme">"JIZZAX" erkin iqtisodiy zonasi</span>
+                </a>
+                <a class="mg-main-portfolio__item" href="#">
+                    <span class="mg-main-portfolio__item-image"><img loading="lazy" src="assets/images/portfolio.svg" alt="WebProgress"></span>
+                    <span class="mg-main-portfolio__item-title">WebProgress</span>
+                    <span class="mg-main-portfolio__item-theme">Online IT ta'lim platformasi</span>
+                </a>
+                <a class="mg-main-portfolio__item" href="#">
+                    <span class="mg-main-portfolio__item-image"><img loading="lazy" src="assets/images/portfolio.svg" alt="Sanepid Jizzax"></span>
+                    <span class="mg-main-portfolio__item-title">Sanepid Jizzax</span>
+                    <span class="mg-main-portfolio__item-theme">Sanitariya-epidemiologik boshqarma</span>
+                </a>
+                <a class="mg-main-portfolio__item" href="#">
+                    <span class="mg-main-portfolio__item-image"><img loading="lazy" src="assets/images/portfolio.svg" alt="Nurata-Mountains"></span>
+                    <span class="mg-main-portfolio__item-title">Nurata-Mountains</span>
+                    <span class="mg-main-portfolio__item-theme">Responsible Tourism Experiences</span>
+                </a>
+                <a class="mg-main-portfolio__item" href="#">
+                    <span class="mg-main-portfolio__item-image"><img loading="lazy" src="assets/images/portfolio.svg" alt="TVM.UZ"></span>
+                    <span class="mg-main-portfolio__item-title">TVM.UZ</span>
+                    <span class="mg-main-portfolio__item-theme">Amaliyotlarni interaktiv boshqarish tizimi</span>
+                </a>
+                <a class="mg-main-portfolio__item" href="#">
+                    <span class="mg-main-portfolio__item-image"><img loading="lazy" src="assets/images/portfolio.svg" alt="VIKANDU"></span>
+                    <span class="mg-main-portfolio__item-title">VIKANDU</span>
+                    <span class="mg-main-portfolio__item-theme">Izolyatsiya yechimlari kompaniyasi</span>
+                </a>
+                <a class="mg-main-portfolio__item" href="#">
+                    <span class="mg-main-portfolio__item-image"><img loading="lazy" src="assets/images/portfolio.svg" alt="Voyagexpert"></span>
+                    <span class="mg-main-portfolio__item-title">Voyagexpert</span>
+                    <span class="mg-main-portfolio__item-theme">Turizmni rivojlantirish tizimi</span>
+                </a>
+                <a class="mg-main-portfolio__item" href="#">
+                    <span class="mg-main-portfolio__item-image"><img loading="lazy" src="assets/images/portfolio.svg" alt="Skor"></span>
+                    <span class="mg-main-portfolio__item-title">Skor</span>
+                    <span class="mg-main-portfolio__item-theme">O'quv markazlar uchun CRM tizim</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="mp-footer" id="footer">
+        <div class="mp-wrapp mp-footer__paysystems-inner">
+            <div class="mp-footer__paysystems-title">To'lovlarni sizga qulay usulda qabul qilamiz.</div>
+            <div class="mp-footer__paysystems-list">
+                <span class="mp-footer__paysystems-item">UZCARD</span>
+                <span class="mp-footer__paysystems-item">HUMO</span>
+                <span class="mp-footer__paysystems-item">PayMe</span>
+                <span class="mp-footer__paysystems-item">Uzum Bank</span>
+                <span class="mp-footer__paysystems-item">MasterCard</span>
+                <span class="mp-footer__paysystems-item">VISA</span>
+            </div>
+        </div>
+        <div class="mp-wrapp mp-footer__inner">
+            <div class="mp-footer__left">
+                <a href="/" class="mp-footer__logo"><img src="assets/images/logo-white.svg" alt="IT Progress"></a>
+                <p class="mp-footer__text">IT Progress 6 yil davomida turli biznes yo'nalishlari uchun 200 dan ortiq
+                    loyihalarni yaratdi. Tayyor mavzuli saytlar katalogimiz qisqa muddatda saytlarni ishga tushirish va
+                    arzon narxlarni saqlash imkonini beradi.</p>
+                <div class="mp-footer__year-wrapper">
+                    <span class="mp-footer__year">© 2019–2025</span>
+                    <a class="mp-footer__privacy" href="#">Maxfiylik siyosati</a>
+                </div>
+                <div class="mp-footer__socials">
+                    <a href="#" aria-label="Telegram"><i class="bx bxl-telegram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                </div>
+            </div>
+            <div class="mp-footer__nav">
+                <div class="mp-footer__group">
+                    <div class="mp-footer__group-title">Kompaniya</div>
+                    <a href="#footer">IT Progress haqida</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#tariffs">Narxlar</a>
+                    <a href="#faq">Izohlar</a>
+                    <a href="#">Aksiya</a>
+                    <a href="#">Yordam</a>
+                </div>
+                <div class="mp-footer__group">
+                    <div class="mp-footer__group-title">Sayt yaratish</div>
+                    <a href="#tariffs">Kichik veb sayt</a>
+                    <a href="#tariffs">Biznes sayt</a>
+                    <a href="#tariffs">Internet-do'kon</a>
+                    <a href="#portfolio">Tayyor dizaynlar</a>
+                </div>
+                <div class="mp-footer__group">
+                    <div class="mp-footer__group-title">Xizmatlar</div>
+                    <a href="#">MegaCRM</a>
+                    <a href="#">Onicon</a>
+                    <a href="#">Maliver</a>
+                    <a href="#">Logotip konstruktor</a>
+                </div>
+            </div>
+            <div class="mp-footer__phones">
+                <div class="mp-footer__phones-title">Jizzax</div>
+                <a href="tel:+998943441929">+998 (94) 344-19-29</a>
+                <a href="tel:+998972606909">+998 (97) 260-69-09</a>
+                <p class="mp-footer__address">130100, O'zbekiston, Jizzax shahri, Sh.Rashidov ko'chasi, 63</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ FLOATING MESSENGERS ============ -->
+    <div class="mg-messengers">
+        <div class="mg-messengers__list js-messengers-list">
+            <a class="mg-messengers__item mg-messengers__item--tg" href="https://t.me/Axror_Abduganiyev" target="_blank" rel="noopener" aria-label="Telegram"><i class="bx bxl-telegram"></i></a>
+            <a class="mg-messengers__item mg-messengers__item--wa" href="https://wa.me/998943441929" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+            <a class="mg-messengers__item mg-messengers__item--tel" href="tel:+998943441929" aria-label="Qo'ng'iroq"><i class="bx bx-phone"></i></a>
+        </div>
+        <button class="mg-messengers__button js-messengers-toggle" aria-label="Bog'lanish"><i class="bx bx-message-dots"></i></button>
+    </div>
+
+    <!-- ============ SEARCH MODAL ============ -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+                <div class="modal-header border-0 align-items-center">
+                    <i class="bx bx-search fs-3 me-3 text-success"></i>
+                    <input type="text" class="form-control border-0 shadow-none fs-5" placeholder="Sayt bo'ylab qidirish...">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Yopish"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ ORDER MODAL ============ -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 p-3 p-md-4">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+                    aria-label="Yopish"></button>
+                <div class="modal-body">
+                    <h3 class="text-center fw-bold mb-1">Buyurtma berish</h3>
+                    <p class="text-center text-muted mb-4 js-order-tariff">Ariza qoldiring — biz siz bilan bog'lanamiz</p>
+                    <form class="js-order-form">
+                        <div class="mb-3">
+                            <label class="form-label fw-medium">Ismingiz</label>
+                            <input type="text" class="form-control rounded-3" placeholder="Ismingizni kiriting" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-medium">Telefon raqamingiz</label>
+                            <input type="tel" class="form-control rounded-3" placeholder="+998 ___ __ __" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-medium">Email</label>
+                            <input type="email" class="form-control rounded-3" placeholder="email@example.com">
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="mg-button w-100">Yuborish</button>
+                        </div>
+                    </form>
+                    <p class="text-center mt-3 text-muted small mb-0">Formani yuborish orqali siz maxfiylik siyosatiga
+                        rozi bo'lasiz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
