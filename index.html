@@ -376,25 +376,33 @@
             <h2 class="section-title">Biz bilan sayt ishlab chiqish orqali siz</h2>
             <div class="mg-main-get__list">
                 <div class="mg-main-get__item">
-                    <div class="mg-main-get__item-ico"><i class="bx bx-rocket"></i></div>
-                    <div class="mg-main-get__item-title">Oson boshlash</div>
+                    <div class="mg-main-get__item-head">
+                        <div class="mg-main-get__item-ico"><i class="bx bx-rocket"></i></div>
+                        <div class="mg-main-get__item-title">Oson boshlash</div>
+                    </div>
                     <p class="mg-main-get__item-text">Biz sizga loyihangizni tezda ishga tushirishga yordam beramiz,
                         uni qanday rivojlantirishni o'rgatamiz va qo'llab-quvvatlaymiz.</p>
                 </div>
                 <div class="mg-main-get__item">
-                    <div class="mg-main-get__item-ico"><i class="bx bx-store-alt"></i></div>
-                    <div class="mg-main-get__item-title">Veb-sayt sotish xizmatlari</div>
+                    <div class="mg-main-get__item-head">
+                        <div class="mg-main-get__item-ico"><i class="bx bx-wallet"></i></div>
+                        <div class="mg-main-get__item-title">Veb-sayt sotish xizmatlari</div>
+                    </div>
                     <p class="mg-main-get__item-text">Mahsulot va xizmatlaringizni sotish uchun tayyor platforma.</p>
                 </div>
                 <div class="mg-main-get__item">
-                    <div class="mg-main-get__item-ico"><i class="bx bx-shield-quarter"></i></div>
-                    <div class="mg-main-get__item-title">Ishonchlilik</div>
+                    <div class="mg-main-get__item-head">
+                        <div class="mg-main-get__item-ico"><i class="bx bx-lock-alt"></i></div>
+                        <div class="mg-main-get__item-title">Ishonchlilik</div>
+                    </div>
                     <p class="mg-main-get__item-text">Avtomatik zaxira nusxalari, DDoS hujumlariga chidamlilik va
                         xakerlardan himoya.</p>
                 </div>
                 <div class="mg-main-get__item">
-                    <div class="mg-main-get__item-ico"><i class="bx bx-laptop"></i></div>
-                    <div class="mg-main-get__item-title">Qulaylik</div>
+                    <div class="mg-main-get__item-head">
+                        <div class="mg-main-get__item-ico"><i class="bx bx-cog"></i></div>
+                        <div class="mg-main-get__item-title">Qulaylik</div>
+                    </div>
                     <p class="mg-main-get__item-text">CMS.S3 boshqaruv tizimi saytni oson to'ldirishni ta'minlaydi,
                         maxsus malakalar talab etilmaydi.</p>
                 </div>
@@ -507,7 +515,7 @@
         </div>
     </section>
 
-    <!-- ============ CATALOG ============ -->
+    <!-- ============ CATALOG (Fan layout) ============ -->
     <section class="mg-main-catalog">
         <div class="mg-main-catalog__inner mp-wrapp">
             <div class="mg-main-catalog__left">
@@ -520,8 +528,17 @@
                 </ul>
                 <a class="mg-button" href="#portfolio">Saytni tanlang</a>
             </div>
-            <div class="mg-main-catalog__image">
-                <img loading="lazy" src="assets/images/catalog.svg" alt="Tayyor saytlar katalogi">
+            <div class="mg-main-catalog__right">
+                <div class="fan">
+                    <!-- TODO: picsum rasmlarni keyinroq o'z sayt skrinshotlaringizga almashtiring -->
+                    <img src="https://picsum.photos/id/1015/500/700" class="card c1" alt="">
+                    <img src="https://picsum.photos/id/1016/500/700" class="card c2" alt="">
+                    <img src="https://picsum.photos/id/1018/500/700" class="card c3" alt="">
+                    <img src="https://picsum.photos/id/1020/500/700" class="card c4" alt="">
+                    <img src="https://picsum.photos/id/1024/500/700" class="card c5" alt="">
+                    <img src="https://picsum.photos/id/1025/500/700" class="card c6" alt="">
+                    <img src="https://picsum.photos/id/1035/500/700" class="card c7" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -578,20 +595,29 @@
 
     <!-- ============ FOOTER ============ -->
     <footer class="mp-footer" id="footer">
-        <div class="mp-wrapp mp-footer__paysystems-inner">
+        <!-- Payment systems (centered) -->
+        <div class="mp-wrapp mp-footer__paysystems">
             <div class="mp-footer__paysystems-title">To'lovlarni sizga qulay usulda qabul qilamiz.</div>
             <div class="mp-footer__paysystems-list">
-                <span class="mp-footer__paysystems-item">UZCARD</span>
-                <span class="mp-footer__paysystems-item">HUMO</span>
-                <span class="mp-footer__paysystems-item">PayMe</span>
-                <span class="mp-footer__paysystems-item">Uzum Bank</span>
-                <span class="mp-footer__paysystems-item">MasterCard</span>
-                <span class="mp-footer__paysystems-item">VISA</span>
+                <!-- TODO: rasmlarni keyinroq o'z logolaringizga almashtiring -->
+                <span class="mp-footer__paysystems-item"><img src="https://placehold.co/90x44/ffffff/1a8cff?text=UZCARD" alt="Uzcard"></span>
+                <span class="mp-footer__paysystems-item"><img src="https://placehold.co/90x44/ffffff/00a651?text=HUMO" alt="Humo"></span>
+                <span class="mp-footer__paysystems-item"><img src="https://placehold.co/90x44/ffffff/00b4d8?text=Payme" alt="Payme"></span>
+                <span class="mp-footer__paysystems-item"><img src="https://placehold.co/90x44/ffffff/7d3cff?text=Uzum" alt="Uzum Bank"></span>
+                <span class="mp-footer__paysystems-item"><img src="https://placehold.co/90x44/ffffff/eb001b?text=MasterCard" alt="MasterCard"></span>
+                <span class="mp-footer__paysystems-item"><img src="https://placehold.co/90x44/ffffff/1a1f71?text=VISA" alt="Visa"></span>
+                <span class="mp-footer__paysystems-item"><img src="https://placehold.co/90x44/ffffff/333333?text=Schet" alt="Schet"></span>
             </div>
         </div>
+
+        <!-- 4 columns -->
         <div class="mp-wrapp mp-footer__inner">
-            <div class="mp-footer__left">
-                <a href="/" class="mp-footer__logo"><img src="assets/images/logo-white.svg" alt="IT Progress"></a>
+            <!-- Column 1 -->
+            <div class="mp-footer__col mp-footer__col--brand">
+                <a href="/" class="mp-footer__logo">
+                    <span class="mp-footer__logo-ico"><i class="bx bx-code-alt"></i></span>
+                    <span class="mp-footer__logo-text">IT Progress<small>Software</small></span>
+                </a>
                 <p class="mp-footer__text">IT Progress 6 yil davomida turli biznes yo'nalishlari uchun 200 dan ortiq
                     loyihalarni yaratdi. Tayyor mavzuli saytlar katalogimiz qisqa muddatda saytlarni ishga tushirish va
                     arzon narxlarni saqlash imkonini beradi.</p>
@@ -599,14 +625,10 @@
                     <span class="mp-footer__year">© 2019–2025</span>
                     <a class="mp-footer__privacy" href="#">Maxfiylik siyosati</a>
                 </div>
-                <div class="mp-footer__socials">
-                    <a href="#" aria-label="Telegram"><i class="bx bxl-telegram"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-                </div>
             </div>
-            <div class="mp-footer__nav">
+
+            <!-- Column 2 -->
+            <div class="mp-footer__col">
                 <div class="mp-footer__group">
                     <div class="mp-footer__group-title">Kompaniya</div>
                     <a href="#footer">IT Progress haqida</a>
@@ -615,27 +637,50 @@
                     <a href="#faq">Izohlar</a>
                     <a href="#">Aksiya</a>
                     <a href="#">Yordam</a>
+                    <a href="#footer">Aloqalar</a>
                 </div>
+                <div class="mp-footer__group">
+                    <div class="mp-footer__group-title">Hamkorlik</div>
+                    <a href="#">Hamkorlik dasturi</a>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="mp-footer__col">
                 <div class="mp-footer__group">
                     <div class="mp-footer__group-title">Sayt yaratish</div>
                     <a href="#tariffs">Kichik veb sayt</a>
                     <a href="#tariffs">Biznes sayt</a>
                     <a href="#tariffs">Internet-do'kon</a>
-                    <a href="#portfolio">Tayyor dizaynlar</a>
                 </div>
                 <div class="mp-footer__group">
-                    <div class="mp-footer__group-title">Xizmatlar</div>
-                    <a href="#">MegaCRM</a>
-                    <a href="#">Onicon</a>
-                    <a href="#">Maliver</a>
-                    <a href="#">Logotip konstruktor</a>
+                    <div class="mp-footer__group-title">Saytlar katalogi</div>
+                    <a href="#portfolio">Unikal saytlar</a>
+                    <a href="#portfolio">Sayt shablonlari</a>
+                    <a href="#portfolio">Do'kon shablonlari</a>
+                    <a href="#">Logotiplar</a>
                 </div>
             </div>
-            <div class="mp-footer__phones">
-                <div class="mp-footer__phones-title">Jizzax</div>
-                <a href="tel:+998943441929">+998 (94) 344-19-29</a>
-                <a href="tel:+998972606909">+998 (97) 260-69-09</a>
-                <p class="mp-footer__address">130100, O'zbekiston, Jizzax shahri, Sh.Rashidov ko'chasi, 63</p>
+
+            <!-- Column 4 -->
+            <div class="mp-footer__col">
+                <div class="mp-footer__group-title">Xizmatlar</div>
+                <div class="mp-footer__contacts">
+                    <div class="mp-footer__contacts-city">Toshkent</div>
+                    <a href="tel:+998943441929">+998 (94) 344-19-29</a>
+                    <a href="tel:+998972606909">+998 (97) 260-69-09</a>
+                    <p class="mp-footer__address">130100, O'zbekiston, Jizzax shahri, Sh.Rashidov ko'chasi, 63</p>
+                </div>
+                <form class="mp-footer__search" onsubmit="return false;">
+                    <input type="text" placeholder="Sayt bo'ylab qidirish">
+                    <button type="submit" aria-label="Qidirish"><i class="bx bx-search"></i></button>
+                </form>
+                <div class="mp-footer__socials">
+                    <a href="#" aria-label="Telegram"><i class="bx bxl-telegram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                </div>
             </div>
         </div>
     </footer>
