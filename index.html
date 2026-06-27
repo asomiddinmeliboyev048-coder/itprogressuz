@@ -119,9 +119,9 @@
                 <button class="mp-main-menu__lang dropdown-toggle" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false">Til</button>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#">🇺🇸 Inglizcha</a></li>
-                    <li><a class="dropdown-item" href="#">🇺🇿 O'zbekcha</a></li>
-                    <li><a class="dropdown-item" href="#">🇷🇺 Ruscha</a></li>
+                    <li><a class="dropdown-item mp-main-menu__lang-item" href="#"><span class="mp-flag mp-flag--en"></span> Inglizcha</a></li>
+                    <li><a class="dropdown-item mp-main-menu__lang-item" href="#"><span class="mp-flag mp-flag--uz"></span> O'zbekcha</a></li>
+                    <li><a class="dropdown-item mp-main-menu__lang-item" href="#"><span class="mp-flag mp-flag--ru"></span> Ruscha</a></li>
                 </ul>
             </div>
         </div>
@@ -172,101 +172,187 @@
     <section class="mg-main-tariffs" id="tariffs">
         <div class="mg-main-tariffs__inner mp-wrapp">
             <h2 class="section-title">Xizmatlar</h2>
+
             <div class="mg-main-tariffs__list">
 
-                <article class="mg-main-tariffs__item">
+                <article class="mg-main-tariffs__item" data-value="1">
                     <div class="mg-main-tariffs__item-title">Kichik veb sayt</div>
                     <div class="mg-main-tariffs__item-text">Bitta sahifali veb-sayt, 3 kun ichida</div>
                     <div class="mg-main-tariffs__item-price">1 950 000 so'm</div>
-                    <button class="mg-main-tariffs__item-button-more js-tariff-more" data-target="t1">Batafsil</button>
+                    <a href="#order" class="mg-main-tariffs__item-button-more" data-bs-toggle="modal"
+                        data-bs-target="#orderModal" data-tariff="Kichik veb sayt">Batafsil</a>
                     <div class="mg-main-tariffs__item-buttons">
                         <a href="#order" class="mg-main-tariffs__item-button" data-bs-toggle="modal"
                             data-bs-target="#orderModal" data-tariff="Kichik veb sayt">Buyurtma berish</a>
-                    </div>
-                    <div class="mg-main-tariffs__details" id="t1" hidden>
-                        <div class="mg-main-tariffs__details-col">
-                            <h4>Sayt yaratish</h4>
-                            <ul>
-                                <li>Tayyor yechim asosida landing sahifasini ishga tushirish</li>
-                                <li>Rang sxemasini korporativ ranglaringizga moslashtirish</li>
-                                <li>Bloklarni biznesingiz xususiyatlariga moslab tahrirlash</li>
-                                <li>Domenni ulash va qidiruv tizimlarida ro'yxatdan o'tkazish</li>
-                            </ul>
-                        </div>
-                        <div class="mg-main-tariffs__details-col">
-                            <h4>Texnik xizmat ko'rsatish</h4>
-                            <ul>
-                                <li>Internetga joylashtirish</li>
-                                <li>Disk hajmi — 1000 Mb</li>
-                                <li>CMS.S3 qulay boshqaruv tizimi</li>
-                                <li>Texnik yordam va avtomatik zaxira nusxalar</li>
-                            </ul>
-                        </div>
+                        <button class="mg-main-tariffs__item-more js-tariff-more" data-value="1"
+                            aria-label="Batafsil ma'lumot">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16.333" cy="15.999" r="13.333" stroke="#1BA445" stroke-width="2"></circle>
+                                <path d="M13.664 11.999a2.667 2.667 0 1 1 4.91 1.44c-.796 1.24-2.243 2.42-2.243 3.893v.667"
+                                    stroke="#1BA445" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M16.32 22.666h.012" stroke="#1BA445" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
                     </div>
                 </article>
 
-                <article class="mg-main-tariffs__item mg-main-tariffs__item--featured">
+                <article class="mg-main-tariffs__item mg-main-tariffs__item--featured" data-value="2">
                     <span class="mg-main-tariffs__badge">Ommabop</span>
                     <div class="mg-main-tariffs__item-title">Veb-sayt — Biznes</div>
                     <div class="mg-main-tariffs__item-text">Korporativ veb-sayt, 5 kun ichida</div>
                     <div class="mg-main-tariffs__item-price">2 500 000 so'm</div>
-                    <button class="mg-main-tariffs__item-button-more js-tariff-more" data-target="t2">Batafsil</button>
+                    <a href="#order" class="mg-main-tariffs__item-button-more" data-bs-toggle="modal"
+                        data-bs-target="#orderModal" data-tariff="Veb-sayt — Biznes">Batafsil</a>
                     <div class="mg-main-tariffs__item-buttons">
                         <a href="#order" class="mg-main-tariffs__item-button" data-bs-toggle="modal"
                             data-bs-target="#orderModal" data-tariff="Veb-sayt — Biznes">Buyurtma berish</a>
-                    </div>
-                    <div class="mg-main-tariffs__details" id="t2" hidden>
-                        <div class="mg-main-tariffs__details-col">
-                            <h4>Sayt yaratish</h4>
-                            <ul>
-                                <li>Rang sxemasini korporativ ranglaringizga moslashtirish</li>
-                                <li>Sayt tuzilmasini biznesingizga moslab yaratish</li>
-                                <li>Kompaniyangiz ma'lumotlari bilan to'ldirish</li>
-                                <li>Domen va qidiruv tizimlarida ro'yxatdan o'tkazish</li>
-                            </ul>
-                        </div>
-                        <div class="mg-main-tariffs__details-col">
-                            <h4>Texnik xizmat ko'rsatish</h4>
-                            <ul>
-                                <li>Internetga joylashtirish</li>
-                                <li>Disk hajmi — 2000 Mb</li>
-                                <li>CMS.S3 qulay boshqaruv tizimi</li>
-                                <li>DDoS va xakerlik hujumlaridan himoya</li>
-                            </ul>
-                        </div>
+                        <button class="mg-main-tariffs__item-more js-tariff-more" data-value="2"
+                            aria-label="Batafsil ma'lumot">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16.333" cy="15.999" r="13.333" stroke="#1BA445" stroke-width="2"></circle>
+                                <path d="M13.664 11.999a2.667 2.667 0 1 1 4.91 1.44c-.796 1.24-2.243 2.42-2.243 3.893v.667"
+                                    stroke="#1BA445" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M16.32 22.666h.012" stroke="#1BA445" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
                     </div>
                 </article>
 
-                <article class="mg-main-tariffs__item">
+                <article class="mg-main-tariffs__item" data-value="3">
                     <div class="mg-main-tariffs__item-title">Internet-do'kon</div>
                     <div class="mg-main-tariffs__item-text">Onlayn savdolar uchun sayt, 7 kun ichida</div>
                     <div class="mg-main-tariffs__item-price">5 000 000 so'm</div>
-                    <button class="mg-main-tariffs__item-button-more js-tariff-more" data-target="t3">Batafsil</button>
+                    <a href="#order" class="mg-main-tariffs__item-button-more" data-bs-toggle="modal"
+                        data-bs-target="#orderModal" data-tariff="Internet-do'kon">Batafsil</a>
                     <div class="mg-main-tariffs__item-buttons">
                         <a href="#order" class="mg-main-tariffs__item-button" data-bs-toggle="modal"
                             data-bs-target="#orderModal" data-tariff="Internet-do'kon">Buyurtma berish</a>
-                    </div>
-                    <div class="mg-main-tariffs__details" id="t3" hidden>
-                        <div class="mg-main-tariffs__details-col">
-                            <h4>Sayt yaratish</h4>
-                            <ul>
-                                <li>Tayyor yechim asosida internet-do'kon ishga tushirish</li>
-                                <li>Rang sxemasini brendingizga moslashtirish</li>
-                                <li>Kategoriyalar va mahsulotlarni tahrirlash</li>
-                                <li>Mahsulotlaringiz bilan to'ldirish</li>
-                            </ul>
-                        </div>
-                        <div class="mg-main-tariffs__details-col">
-                            <h4>Texnik xizmat ko'rsatish</h4>
-                            <ul>
-                                <li>Internetga joylashtirish</li>
-                                <li>Disk hajmi — 5000 Mb</li>
-                                <li>7 kun davomida texnik qo'llab-quvvatlash</li>
-                                <li>Avtomatik zaxira va hujumlardan himoya</li>
-                            </ul>
-                        </div>
+                        <button class="mg-main-tariffs__item-more js-tariff-more" data-value="3"
+                            aria-label="Batafsil ma'lumot">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16.333" cy="15.999" r="13.333" stroke="#1BA445" stroke-width="2"></circle>
+                                <path d="M13.664 11.999a2.667 2.667 0 1 1 4.91 1.44c-.796 1.24-2.243 2.42-2.243 3.893v.667"
+                                    stroke="#1BA445" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M16.32 22.666h.012" stroke="#1BA445" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
                     </div>
                 </article>
+
+            </div>
+
+            <!-- Tariff detail popups -->
+            <div class="mg-main-tariffs__popup-wrapper js-tariff-popups">
+
+                <!-- Popup 1 -->
+                <div class="mg-main-tariffs__popup" data-value="1">
+                    <button class="mg-main-tariffs__popup-close js-tariff-popup-close" aria-label="Yopish">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12.67 3.334-9.334 9.333m0-9.333 9.333 9.333" stroke="red" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <div class="mg-main-tariffs__popup-list">
+                        <div class="mg-main-tariffs__popup-column">
+                            <div class="mg-main-tariffs__popup-column-title">Sayt yaratish</div>
+                            <div class="mg-main-tariffs__popup-column-list">
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Tayyor yechim asosida landing sahifasini ishga tushirish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Tayyor saytning rang sxemasini korporativ ranglaringizga moslashtirish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Sayt bloklarini biznesingiz xususiyatlarini hisobga olgan holda tahrirlash</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Landing sahifani ma'lumotlaringiz bilan to'ldirish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Domenni ulash — yangi domenni ro'yxatdan o'tkazish yoki mavjud domeningizni ulash</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Yandex.ru va Google.com qidiruv tizimlarida ro'yxatdan o'tkazish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Hisoblagichlarni o'rnatish</span></div>
+                            </div>
+                        </div>
+                        <div class="mg-main-tariffs__popup-column">
+                            <div class="mg-main-tariffs__popup-column-title">Saytni texnik xizmat ko'rsatish</div>
+                            <div class="mg-main-tariffs__popup-column-list">
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Landing sahifani internetga joylashtirish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Disk hajmi — 1000 Mb</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>CMS.S3 boshqaruv tizimi bilan qulay boshqaruv</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Texnik yordam</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Avtomatik zaxira nusxalar yaratish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Hujumlardan va DDoS-hujumlardan himoya</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popup 2 -->
+                <div class="mg-main-tariffs__popup" data-value="2">
+                    <button class="mg-main-tariffs__popup-close js-tariff-popup-close" aria-label="Yopish">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12.67 3.334-9.334 9.333m0-9.333 9.333 9.333" stroke="red" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <div class="mg-main-tariffs__popup-list">
+                        <div class="mg-main-tariffs__popup-column">
+                            <div class="mg-main-tariffs__popup-column-title">Sayt yaratish</div>
+                            <div class="mg-main-tariffs__popup-column-list">
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Tayyor saytning rang sxemasini korporativ ranglaringizga moslashtirish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Sayt tuzilmasini biznesingiz xususiyatlarini hisobga olgan holda yaratish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Saytni kompaniyangiz haqidagi ma'lumotlar bilan to'ldirish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Domenni ulash — yangi domenni ro'yxatdan o'tkazish yoki mavjud domeningizni ulash</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Yandex.ru va Google.com qidiruv tizimlarida ro'yxatdan o'tkazish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Ziyoratchilar statistikasini hisoblash uchun hisoblagichlarni o'rnatish</span></div>
+                            </div>
+                        </div>
+                        <div class="mg-main-tariffs__popup-column">
+                            <div class="mg-main-tariffs__popup-column-title">Saytni texnik xizmat ko'rsatish</div>
+                            <div class="mg-main-tariffs__popup-column-list">
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Internetga joylashtirish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Disk hajmi — 2000 Mb</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>CMS.S3 boshqaruv tizimi bilan qulay boshqaruv</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Texnik yordam</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Avtomatik zaxira nusxalari yaratish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Hujumlardan va DDoS-hujumlardan himoya</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popup 3 -->
+                <div class="mg-main-tariffs__popup" data-value="3">
+                    <button class="mg-main-tariffs__popup-close js-tariff-popup-close" aria-label="Yopish">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12.67 3.334-9.334 9.333m0-9.333 9.333 9.333" stroke="red" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <div class="mg-main-tariffs__popup-list">
+                        <div class="mg-main-tariffs__popup-column">
+                            <div class="mg-main-tariffs__popup-column-title">Sayt yaratish</div>
+                            <div class="mg-main-tariffs__popup-column-list">
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Tayyor yechim asosida internet-do'kon ishga tushirish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Tayyor internet-do'konning rang sxemasini brendingiz ranglariga moslashtirish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Sayt matnlari, kategoriyalari va mahsulotlarini biznesingiz xususiyatlarini hisobga olib tahrirlash</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Internet-do'konni mahsulotlaringiz bilan to'ldirish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Domen ulash — yangi domenni ro'yxatdan o'tkazish yoki mavjud domeningizni ulash</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Yandex.ru va Google.com qidiruv tizimlarida ro'yxatdan o'tkazish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Tashrif statistikasi hisoblagichlarini o'rnatish</span></div>
+                            </div>
+                        </div>
+                        <div class="mg-main-tariffs__popup-column">
+                            <div class="mg-main-tariffs__popup-column-title">Saytni texnik xizmat ko'rsatish</div>
+                            <div class="mg-main-tariffs__popup-column-list">
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Internetga joylashtirish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Disk hajmi — 5000 MB</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Qulay CMS.S3 boshqaruv tizimi</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>7 kun davomida telefon, email va messenjerlar orqali texnik qo'llab-quvvatlash</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Avtomatik zaxira nusxalarini yaratish</span></div>
+                                <div class="mg-main-tariffs__popup-column-item"><span class="_dot"></span><span>Xakerlik va DDoS hujumlaridan himoya</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -566,12 +652,12 @@
 
     <!-- ============ SEARCH MODAL ============ -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content p-2">
+        <div class="modal-dialog modal-fullscreen modal-search">
+            <div class="modal-content py-2">
                 <div class="modal-header border-0 align-items-center">
-                    <i class="bx bx-search fs-3 me-3 text-success"></i>
-                    <input type="text" class="form-control border-0 shadow-none fs-5" placeholder="Sayt bo'ylab qidirish...">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Yopish"></button>
+                    <i class="bx bx-search fs-3 me-4 text-success"></i>
+                    <input type="text" class="form-control border-0 shadow-none fs-5" placeholder="Search...">
+                    <button type="button" class="btn-close fs-5" data-bs-dismiss="modal" aria-label="Yopish"></button>
                 </div>
             </div>
         </div>

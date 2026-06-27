@@ -330,6 +330,45 @@ img {
     cursor: pointer;
 }
 
+.mp-main-menu__lang-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mp-flag {
+    flex-shrink: 0;
+    width: 22px;
+    height: 16px;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .06);
+}
+
+.mp-flag--en {
+    background: linear-gradient(180deg, #b22234 0 15%, #fff 15% 30%, #b22234 30% 45%, #fff 45% 60%, #b22234 60% 75%, #fff 75% 90%, #b22234 90%);
+    position: relative;
+}
+
+.mp-flag--en::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 55%;
+    background: #3c3b6e;
+}
+
+.mp-flag--uz {
+    background: linear-gradient(180deg, #0099b5 0 33%, #fff 33% 38%, #ce1126 38% 41%, #fff 41% 46%, #1eb53a 46%);
+}
+
+.mp-flag--ru {
+    background: linear-gradient(180deg, #fff 0 33%, #0039a6 33% 66%, #d52b1e 66%);
+}
+
 /* ============================================================
    MOBILE ASIDE
    ============================================================ */
@@ -560,6 +599,8 @@ img {
 
 .mg-main-tariffs__item-buttons {
     display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .mg-main-tariffs__item-button {
@@ -579,38 +620,105 @@ img {
     transform: translateY(-2px);
 }
 
-.mg-main-tariffs__details {
-    margin-top: 22px;
-    padding-top: 22px;
-    border-top: 1px dashed var(--line);
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 18px;
+.mg-main-tariffs__item-more {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: var(--green-light);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background .15s, transform .15s;
 }
 
-.mg-main-tariffs__details h4 {
-    font-size: 15px;
+.mg-main-tariffs__item-more:hover {
+    background: #d6f3e0;
+    transform: translateY(-2px);
+}
+
+/* ---------- Tariff detail popups ---------- */
+.mg-main-tariffs__popup-wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 1080;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(16, 24, 40, .55);
+    backdrop-filter: blur(2px);
+}
+
+.mg-main-tariffs__popup-wrapper.is-open {
+    display: flex;
+}
+
+.mg-main-tariffs__popup {
+    position: relative;
+    display: none;
+    width: 100%;
+    max-width: 900px;
+    max-height: 88vh;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 40px;
+}
+
+.mg-main-tariffs__popup.is-active {
+    display: block;
+}
+
+.mg-main-tariffs__popup-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: var(--bg-soft);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background .15s;
+}
+
+.mg-main-tariffs__popup-close:hover {
+    background: #ffe3e3;
+}
+
+.mg-main-tariffs__popup-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+}
+
+.mg-main-tariffs__popup-column-title {
+    font-size: 18px;
     font-weight: 800;
-    margin: 0 0 10px;
-    text-transform: uppercase;
-    letter-spacing: .4px;
+    margin-bottom: 18px;
     color: var(--ink);
 }
 
-.mg-main-tariffs__details ul li {
-    position: relative;
-    padding-left: 26px;
-    font-size: 14px;
+.mg-main-tariffs__popup-column-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 14.5px;
     color: var(--muted);
-    margin-bottom: 9px;
-    line-height: 1.4;
+    line-height: 1.45;
 }
 
-.mg-main-tariffs__details ul li::before {
-    content: "";
-    position: absolute;
-    left: 4px;
-    top: 6px;
+.mg-main-tariffs__popup-column-item ._dot {
+    flex-shrink: 0;
+    margin-top: 6px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -1264,6 +1372,15 @@ img {
 
     .mg-main-catalog__inner {
         padding: 36px 24px;
+    }
+
+    .mg-main-tariffs__popup {
+        padding: 44px 22px 28px;
+    }
+
+    .mg-main-tariffs__popup-list {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 
     .mg-messengers {

@@ -66,22 +66,49 @@
             });
         }
 
-        /* ---------- Tariff "Batafsil" toggle ---------- */
-        document.querySelectorAll('.js-tariff-more').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                const id = btn.getAttribute('data-target');
-                const details = document.getElementById(id);
-                if (!details) return;
-                const hidden = details.hasAttribute('hidden');
-                if (hidden) {
-                    details.removeAttribute('hidden');
-                    btn.textContent = 'Yopish';
-                } else {
-                    details.setAttribute('hidden', '');
-                    btn.textContent = 'Batafsil';
+        /* ---------- Tariff "?" detail popups ---------- */
+        const popupWrapper = document.querySelector('.js-tariff-popups');
+        if (popupWrapper) {
+            const popups = popupWrapper.querySelectorAll('.mg-main-tariffs__popup');
+
+            function openPopup(value) {
+                popups.forEach(function (p) {
+                    p.classList.toggle('is-active', p.getAttribute('data-value') === value);
+                });
+                popupWrapper.classList.add('is-open');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closePopup() {
+                popupWrapper.classList.remove('is-open');
+                popups.forEach(function (p) {
+                    p.classList.remove('is-active');
+                });
+                document.body.style.overflow = '';
+            }
+
+            document.querySelectorAll('.js-tariff-more').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    openPopup(btn.getAttribute('data-value'));
+                });
+            });
+
+            popupWrapper.querySelectorAll('.js-tariff-popup-close').forEach(function (btn) {
+                btn.addEventListener('click', closePopup);
+            });
+
+            // Close on backdrop click
+            popupWrapper.addEventListener('click', function (e) {
+                if (e.target === popupWrapper) closePopup();
+            });
+
+            // Close on Escape
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && popupWrapper.classList.contains('is-open')) {
+                    closePopup();
                 }
             });
-        });
+        }
 
         /* ---------- Floating messengers ---------- */
         const msgToggle = document.querySelector('.js-messengers-toggle');
