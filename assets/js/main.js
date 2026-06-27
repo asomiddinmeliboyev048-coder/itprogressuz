@@ -110,6 +110,17 @@
             });
         }
 
+        /* ---------- Footer link groups accordion (mobile) ---------- */
+        document.querySelectorAll('.js-footer-group-title').forEach(function (title) {
+            title.addEventListener('click', function (e) {
+                // Only toggle on mobile widths
+                if (window.innerWidth > 680) return;
+                if (e.target.closest('a')) return;
+                const group = title.closest('.mp-footer__group');
+                if (group) group.classList.toggle('is-open');
+            });
+        });
+
         /* ---------- Floating messengers ---------- */
         const msgToggle = document.querySelector('.js-messengers-toggle');
         const msgList = document.querySelector('.js-messengers-list');
